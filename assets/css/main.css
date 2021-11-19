@@ -382,7 +382,7 @@ header.sticky {
     background-color: var(--white-color);
     width: 280px;
     height: 74px;
-    top: 103%;
+    top: 100%;
     right: 100px;
     visibility: hidden;
     transform: translateY(-5%);
