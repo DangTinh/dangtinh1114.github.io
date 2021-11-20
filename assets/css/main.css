@@ -170,7 +170,7 @@ header.sticky {
     align-items: center;
     justify-content: space-between;
     height: 80px;
-    width: 1688px;
+    width: 100%;
     background-color: var(--white-color);
     padding: 0 20px;
     position: fixed;
@@ -322,7 +322,7 @@ header.sticky {
 .header__list-inner-full {
     display: flex;
     position: fixed;
-    width: 1688px;
+    width: 100%;
     top: 14%;
     right: 0;
     background-color: var(--white-color);
