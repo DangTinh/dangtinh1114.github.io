@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SetSail</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/gird.css">
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/owlcarousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-5.15.4-web/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,9 +70,9 @@
                         </li>
                     </ul>
                 </div>
-                <div class="section__user">
+                <button class="section__user js-user">
                     <i class="section__user-icon ti-user"></i>
-                </div>
+                </button>
             </div>
         </section>
         <!-- Header -->
@@ -413,9 +417,9 @@
                     <div class="header__cart-buy">
                         <span>No products in the cart</span>
                     </div>
-                    <div class="header__icon">
-                       <i class="ti-search header__search-icon"></i>  
-                    </div>
+                    <button class="header__icon js-search">
+                       <i class="ti-search header__search-icon"></i> 
+                    </button>
                     <div class="header__icon">
                         <i class="ti-align-right header__list-icon"></i>
                     </div>
@@ -468,9 +472,9 @@
             <h1 class="holiday__name">Perfect Holiday</h1>
             <p class="holiday__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the</p>
             <div class="holiday__country">
-                <div class="grid">
-                    <div class="grid__row">
-                        <div class="grid__column-4">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-3 m-6">
                             <a href="#" class="holiday__link">
                                 <div class="holiday__item-radius">
                                     <figure>
@@ -482,7 +486,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="grid__column-4">
+                        <div class="col l-3 m-6">
                             <a href="#" class="holiday__link">
                                 <div class="holiday__item">
                                     <figure>
@@ -503,7 +507,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="grid__column-4">
+                        <div class="col l-3 m-6">
                             <a href="#" class="holiday__link">
                                 <div class="holiday__item">
                                     <figure>
@@ -524,7 +528,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="grid__column-4">
+                        <div class="col l-3 m-6">
                             <a href="#" class="holiday__link">
                                 <div class="holiday__item">
                                     <figure>
@@ -545,7 +549,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="grid__column-4">
+                        <div class="col l-3 m-6">
                             <a href="#" class="holiday__link">
                                 <div class="holiday__item">
                                     <figure>
@@ -566,7 +570,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="grid__column-4">
+                        <div class="col l-3 m-6">
                             <a href="#" class="holiday__link">
                                 <div class="holiday__item">
                                     <figure>
@@ -587,7 +591,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="grid__column-4">
+                        <div class="col l-3 m-6">
                             <a href="#" class="holiday__link">
                                 <div class="holiday__item">
                                     <figure>
@@ -608,7 +612,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="grid__column-4">
+                        <div class="col l-3 m-6">
                             <a href="#" class="holiday__link">
                                 <div class="holiday__item-radius">
                                     <figure>
@@ -620,7 +624,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="grid__column-4">
+                        <div class="col l-3 m-6">
                             <a href="#" class="holiday__link">
                                 <div class="holiday__item-radius">
                                     <figure>
@@ -632,7 +636,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="grid__column-4">
+                        <div class="col l-3 m-6">
                             <a href="#" class="holiday__link">
                                 <div class="holiday__item">
                                     <figure>
@@ -653,7 +657,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="grid__column-4">
+                        <div class="col l-3 m-6">
                             <a href="#" class="holiday__link">
                                 <div class="holiday__item">
                                     <figure>
@@ -674,7 +678,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="grid__column-4">
+                        <div class="col l-3 m-6">
                             <a href="#" class="holiday__link">
                                 <div class="holiday__item">
                                     <figure>
@@ -718,30 +722,30 @@
 
         <!-- Holiday Intro List -->
         <div class="holiday-intro__list">
-            <div class="grid">
-                <div class="grid__row">
-                    <div class="grid__column-4">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-3 m-6">
                         <div class="holiday-intro__item">
                             <img src="./assets/img/setsail-icon-1.png" alt="" class="holiday-intro__item-img">
                                 <h4 class="holiday-intro__item-title">Restaurants</h4>
                                 <p class="holiday-intro__item-desc">Aenean commodo ligula eget dolor. Lorem ipsum</p>
                         </div>
                     </div>
-                    <div class="grid__column-4">
+                    <div class="col l-3 m-6">
                         <div class="holiday-intro__item">
                             <img src="./assets/img/setsail-icon-2.png" alt="" class="holiday-intro__item-img">
                                 <h4 class="holiday-intro__item-title">Sightseeing</h4>
                                 <p class="holiday-intro__item-desc">Aenean commodo ligula eget dolor. Lorem ipsum</p>
                         </div>
                     </div>
-                    <div class="grid__column-4">
+                    <div class="col l-3 m-6">
                         <div class="holiday-intro__item">
                             <img src="./assets/img/setsail-icon-3.png" alt="" class="holiday-intro__item-img">
                                 <h4 class="holiday-intro__item-title">Shops & Boutiques</h4>
                                 <p class="holiday-intro__item-desc">Aenean commodo ligula eget dolor. Lorem ipsum</p>
                         </div>
                     </div>
-                    <div class="grid__column-4">
+                    <div class="col l-3 m-6">
                         <div class="holiday-intro__item">
                             <img src="./assets/img/setsail-icon-4.png" alt="" class="holiday-intro__item-img">
                                 <h4 class="holiday-intro__item-title">Where to Stay</h4>
@@ -760,9 +764,9 @@
                 <p class="holiday__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the</p>
             </div>
             <div class="holiday__plan">
-                <div class="grid__full">
-                    <div class="grid__full-row">
-                        <div class="grid__full-column-5">
+                <div class="grid">
+                    <div class="row">
+                        <div class="col l-2-4">
                             <div class="holiday-plan__item">
                                 <div>
                                     <figure><img src="./assets/img/Plan/tour-featured-img-1.jpg" alt="" class="holiday-plan__item-img"></figure>
@@ -794,7 +798,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid__full-column-5">
+                        <div class="col l-2-4">
                             <div class="holiday-plan__item">
                                 <div>
                                     <figure><img src="./assets/img/Plan/tour-featured-img-2.jpg" alt="" class="holiday-plan__item-img"></figure>
@@ -826,7 +830,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid__full-column-5">
+                        <div class="col l-2-4">
                             <div class="holiday-plan__item">
                                 <div>
                                     <figure><img src="./assets/img/Plan/tour-featured-img-3.jpg" alt="" class="holiday-plan__item-img"></figure>
@@ -855,7 +859,7 @@
                             </div>
                                         
                         </div>
-                        <div class="grid__full-column-5">
+                        <div class="col l-2-4">
                             <div class="holiday-plan__item">
                                 <div>
                                     <figure><img src="./assets/img/Plan/tour-featured-img-4.jpg" alt="" class="holiday-plan__item-img"></figure>
@@ -887,7 +891,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid__full-column-5">
+                        <div class="col l-2-4">
                             <div class="holiday-plan__item">
                                 <div>
                                     <figure><img src="./assets/img/Plan/tour-featured-img-5.jpg" alt="" class="holiday-plan__item-img"></figure>
@@ -960,9 +964,9 @@
                 <p class="holiday__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis</p>
             </div>
             <div class="special-tour">
-                <div class="grid">
-                    <div class="grid__row">
-                        <div class="grid__column-3">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-4 m-4">
                             <div class="special__sale">
                                 <figure><img src="./assets/img/Special/tour-featured-img-30.jpg" alt="" class="special__sale-img"></figure>
                                 <div class="special__price">
@@ -974,7 +978,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid__column-3">
+                        <div class="col l-4 m-4">
                             <div class="special__sale">
                                 <figure><img src="./assets/img/Special/tour-featured-img-31.jpg" alt="" class="special__sale-img"></figure>
                                 <div class="special__price">
@@ -986,7 +990,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid__column-3">
+                        <div class="col l-4 m-4">
                             <div class="special__sale">
                                 <figure><img src="./assets/img/Special/tour-featured-img-32.jpg" alt="" class="special__sale-img"></figure>
                                 <div class="special__price">
@@ -1078,9 +1082,9 @@
         
         <!-- Form Blog -->
         <div class="blog">
-            <div class="grid">
-                <div class="grid__row">
-                    <div class="grid__column-1">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-7 m-12">
                         <div class="blog__item">
                             <h4 class="blog__item-name">From Our Blog</h4>
                             <p class="blog__item-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the</p>
@@ -1116,7 +1120,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid__column-2">
+                    <div class="col l-1">
+                        
+                    </div>
+                    <div class="col l-4 m-12">
                         <div class="blog-sale">
                             <img src="./assets/img/h1-banner-img-1.jpg" alt="" class="blog-sale__img">
                             <div class="blog-sale__sale">
@@ -1136,9 +1143,9 @@
                 <p class="holiday__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the</p>
             </div>
             <div class="favorite-wrap">
-                <div class="grid">
-                    <div class="grid__row">
-                        <div class="grid__column-3-radius">
+                <div class="grid wide">
+                    <div class="row l-gutter">
+                        <div class="col l-4 l-gutter">
                             <div class="favorite-img">
                                 <figure><img src="./assets/img/Favorite/destination-img-1.jpg" alt="" class="favorite__img"></figure>
                                 <div class="favorite-country">
@@ -1149,7 +1156,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid__column-3-radius">
+                        <div class="col l-4 l-gutter">
                             <div class="favorite-img">
                                 <figure><img src="./assets/img/Favorite/destination-img-2.jpg" alt="" class="favorite__img"></figure>
                                 <div class="favorite-country">
@@ -1157,7 +1164,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="grid__column-3-radius">
+                        <div class="col l-4 l-gutter">
                             <div class="favorite-img">
                                 <figure><img src="./assets/img/Favorite/destination-img-3.jpg" alt="" class="favorite__img"></figure>
                                 <div class="favorite-country">
@@ -1179,10 +1186,10 @@
                 <p class="holiday__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aene an commodo ligula eget dolor. Aenean massa. Cum sociis the</p>
             </div>
             <div class="holiday-end__wrap">
-                <div class="grid">
-                    <div class="grid__row">
+                <div class="grid wide">
+                    <div class="row l-gutter">
                         <div class="holiday-end__img">
-                            <div class="grid__column-5">
+                            <div class="col l-2-4 l-gutter-1">
                                 <img src="./assets/img/Holiday End/packup-1.jpg" alt=""
                                 class="holiday-end__italy">
                                 <div class="holiday-end__sub--italy">
@@ -1192,7 +1199,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid__column-5">
+                            <div class="col l-2-4 l-gutter-1">
                                 <img src="./assets/img/Holiday End/packup-3.jpg" alt="" class="holiday-end__india">
                                 <div class="holiday-end__sub--india">
                                     <div class="holiday-end__text">
@@ -1201,7 +1208,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid__column-5">
+                            <div class="col l-2-4 l-gutter-1">
                                 <img src="./assets/img/Holiday End/packup-2.jpg" alt="">
                                 <div class="holiday-end__sub--japan">
                                     <div class="holiday-end__text">
@@ -1211,7 +1218,7 @@
                                 </div>
                             </div>
                             
-                            <div class="grid__column-5">
+                            <div class="col l-2-4 l-gutter-1">
                                 <img src="./assets/img/Holiday End/packup-5.jpg" alt="" class="holiday-end__usa">
                                 <div class="holiday-end__sub--usa">
                                     <div class="holiday-end__text">
@@ -1220,7 +1227,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="grid__column-5">
+                            <div class="col l-2-4 l-gutter-1">
                                 <img src="./assets/img/Holiday End/packup-6.jpg" alt=""
                                 class="holiday-end__greece">
                                 <div class="holiday-end__sub--greece">
@@ -1294,16 +1301,56 @@
         <div class="cre">
             <p>Powered by @<span>  DangTinh Interactive 2021</span></p>
         </div>
-                        
+
+    <!-- Modal User -->
+    <div class="modal-user js-modal-user">
+        <div class="user-login js-user-login">
+            <div class="user-header">
+                <a>LOGIN</a>
+                <a>REGISTER</a>
+            </div>
+            <div class="user-body">
+                <h4>Sign In Here!</h4>
+                <p>Log into your account in just a few simple steps.</p>
+                <div class="user-name">
+                    <span>
+                        <i class="fas fa-user"></i>
+                    </span>
+                    <input type="text" class="user__login-name" placeholder="User Name">
+                </div>
+                <div class="user-password">
+                    <span>
+                        <i class="fas fa-lock"></i>
+                    </span>
+                    <input type="password" class="user__login-password" placeholder="Password">
+                </div>
+                <footer class="user-forget">
+                    <input id="check" type="checkbox">
+                    <label for="check">Remember me</label>
+                </footer>
+                <a>Lost Your Password?</a>
+                <button>
+                    SIGN IN
+                </button>
+                <p>Sign in with Facebook or Google+</p>
+            </div>
+            <div class="user-footer">
+                <a>FACEBOOK</a>
+                <a>GOOGLE+</a>
+            </div>
+        </div>
+    </div>    
+    <!-- Modal Search -->
+    <div class="modal js-modal">
+        <div class="modal-close-search js-close-search">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="modal-search js-modal-search">
+            <input type="text" class="modal-input" placeholder="Search...">
+            <button class="modal-btn">FIND NOW</button>
+        </div>
     </div>
-
-        
-            
-
-        
-           
-        
-
+    <!-- JS Scroll Nav Fix -->
     <script type="text/javascript">
         window.addEventListener("scroll", function() {
             var header = document.querySelector("header");
@@ -1319,5 +1366,59 @@
   }
 }
     </script>
+    <!-- JS Open User Login -->
+    <script>
+        const userBtn = document.querySelector('.js-user')
+        const modalUser = document.querySelector('.js-modal-user')
+        const modalCloseUser = document.querySelector('.js-user-login')
+        function showUserLogin () {
+            modalUser.classList.add('open')
+        }
+        function hideUserLogin () {
+            modalUser.classList.remove('open')
+        }
+        userBtn.addEventListener('click', showUserLogin)
+        modalUser.addEventListener('click', hideUserLogin)
+        modalCloseUser.addEventListener('click', function(event) {
+            event.stopPropagation()
+        })
+    </script>
+
+
+    <!-- JS Open Search -->
+    <script>
+        const searchBtn = document.querySelector('.js-search')
+        const modal = document.querySelector('.js-modal')
+        const modalCloseSearch = document.querySelector('.js-close-search')
+        const modalSearch = document.querySelector('.js-modal-search')
+
+        function showSearch () {
+            modal.classList.add('open')
+        }
+
+        function hideSearch () {
+            modal.classList.remove('open')
+        }
+        searchBtn.addEventListener('click', showSearch)
+        modalCloseSearch.addEventListener('click', hideSearch)
+        modal.addEventListener('click', hideSearch)
+        modalSearch.addEventListener('click', function(event) {
+            event.stopPropagation()
+        })
+    </script>
+    <script>
+        $(document).ready(function(){
+        $(".owl-carousel").owlCarousel();
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./assets/owlcarousel/owl.carousel.min.js"></script>
 </body>
 </html>
+
+        
+            
+
+        
+           
+        

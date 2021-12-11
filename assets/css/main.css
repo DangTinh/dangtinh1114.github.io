@@ -345,7 +345,10 @@ header.sticky {
     height: 100%;
     display: flex;
     align-items: center;
-    font-size: 2rem;
+}
+
+.header__order button {
+    background-color: transparent;
 }
 
 .header__icon {
@@ -353,6 +356,7 @@ header.sticky {
     align-items: center;
     height: 100%;
     margin-left: 20px;
+    font-size: 2rem;
 }
 
 .header__icon:hover {
@@ -767,9 +771,10 @@ header.sticky {
 
 .holiday__video-play {
     position: absolute;
-    top: 44%;
-    right: 46%;
+    top: 50%;
+    left: 50%;
     cursor: pointer;
+    transform: translate(-50%, -50%);
 }
 
 /* Holiday Intro List */   
@@ -1042,6 +1047,7 @@ header.sticky {
     opacity: 0.7;
     background: linear-gradient(to bottom,rgba(0,0,0,0) 57%,rgba(0,0,0,0.70) 99%,rgba(0,0,0,.6) 100%);
     transition: 0.3s ease-in-out;
+    border-radius: 16px;
 }
 
 .special__sale:hover::after {
@@ -1212,8 +1218,8 @@ header.sticky {
 }
 
 .blog__wrap-img {
-    width: 204px;
-    height: 136px;
+    max-width: 136px;
+    max-height: 136px;
 }
 
 .blog__wrap-img figure {
@@ -1281,11 +1287,12 @@ header.sticky {
 
 .blog-sale__img {
     border-radius: 16px;
+    max-height: 494px;
 }
 
 .blog-sale__sale {
     position: absolute;
-    width: calc(100% + 100px);
+    width: calc(100% + 70px);
     top: 15%;
     left: -14%;
     text-align: center;
@@ -1439,6 +1446,7 @@ header.sticky {
     font-size: 1rem;
     border-radius: 50%;
     box-shadow: 4px 5px 12px rgba(0, 0, 0, .07);
+    z-index: 1;
 }
 
 .holiday-end__sub--india {
@@ -1709,4 +1717,238 @@ header.sticky {
 
 .cre p span:hover {
     color: var(--primary-color);
+}
+
+/* Modal User */
+.modal-user {
+    z-index: 90;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255,255,255,.9);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    display: none;
+    animation: userFadeIn linear 0.3s;
+}
+
+.modal-user.open {
+    display: flex;
+}
+
+.user-login {
+    max-width: 304px;
+    animation: userFadeIn linear 0.2s;
+
+}
+
+.user-header {
+    background-color: var(--primary-color);
+    height: 52px;
+}
+.user-header a {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 52px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.user-header a:last-child {
+    float: right;
+    background-color: #3abdc1;
+}
+.user-body {
+    padding: 30px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.user-body div {
+    background-color: #6fdcdf;
+    color: var(--white-color);
+    margin-bottom: 6px;
+}
+
+.user-password {
+    /* margin-top: 5px; */
+}
+
+.user-body span {
+    position: absolute;
+    left: 50px;
+    line-height: 52px;
+}
+
+.user-body div input {
+    background-color: transparent;
+    padding: 18px 16px 18px 48px;
+    color: var(--white-color);
+    font-weight: 500;
+    width: 100%;
+}
+
+.user-body div input::placeholder {
+    color: var(--white-color);
+}
+.user-body h4 {
+    font-size: 2.1rem;
+}
+
+
+.user-forget {
+    margin-top: 16px;
+}
+
+.user-forget input {
+    margin-right: 14px;
+    transform: translateY(2px);
+}
+
+.user-body a {
+    cursor: pointer;
+    margin-top: 15px;
+    display: block;
+    color: #26878a;
+    font-weight: 600;
+    transition: color linear 0.15s;
+}
+
+.user-body a:hover {
+    color: #000;
+}
+
+.user-body p {
+    font-weight: 600;
+}
+
+.user-body button {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: #fff;
+    padding: 17px;
+    transition: all linear 0.2s;
+    cursor: pointer;
+}
+.user-body button:hover {
+    background-color: #23a9af;
+    color: #fff;
+}
+
+.user-footer {
+
+}
+.user-footer {
+    background-color: var(--primary-color);
+    height: 52px;
+}
+.user-footer a {
+    display: inline-block;
+    width: 50%;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 52px;
+    font-weight: 900;
+}
+
+.user-footer a:hover {
+    filter: brightness(110%);
+    cursor: pointer;
+}
+
+.user-footer a:first-child {
+    background-color: rgb(59, 89, 152);
+}
+
+.user-footer a:last-child {
+    float: right;
+    background-color: rgb(221, 75, 57);
+}
+
+
+/* Modal */
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(12, 240, 248, 0.60);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    display: none;
+    animation: searchFadeIn linear 0.2s;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-close-search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 3rem;
+    color: var(--white-color);
+    padding: 20px;
+    cursor: pointer;
+}
+.modal-search {
+}
+
+.modal-input {
+    min-width: 710px;
+    height: 82px;
+    padding: 0 35px;
+    font-weight: 500;
+}
+
+.modal-btn {
+    height: 82px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding: 0 72px;
+    transform: translateX(-3px);
+    cursor: pointer;
+    transition: all linear 0.175s;
+}
+
+.modal-btn:hover {
+    background-color: #23a9af;
+}
+
+
+@keyframes userFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes searchFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
